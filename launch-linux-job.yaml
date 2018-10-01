@@ -1,0 +1,5 @@
+- name: launch linux script through API
+  hosts: 10.0.2.2
+  tasks:
+    - name: Execute a linux script that list installed pkgs
+      command: dpkg -l > /tmp/installed-pkgs.txt
