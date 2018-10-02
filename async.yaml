@@ -1,4 +1,5 @@
-- hosts: kronos
+- name: Execute a sleep and wait ayncronously
+  hosts: kronos
   remote_user: root
 
   tasks:

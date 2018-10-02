@@ -1,4 +1,4 @@
-- name: launch linux script through API
+- name: launch linux scripts
   hosts: 10.0.2.2
   tasks:
     - name: Execute a linux script that list installed pkgs
