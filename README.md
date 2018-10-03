@@ -14,7 +14,9 @@ Semplice playbook per il lancio di una shell su host linux che ospita la VM di T
 
 
 # defrag.ps1
-Powershell script. Lancia un defrag sul disco locale. Alla fine chiama una API di Tower, tramite curl POST, lanciando un aJOb Template. Impostare le credenziali corrette.
+Powershell script. Lancia un defrag sul disco locale. Alla fine chiama una API di Tower, tramite curl POST, lanciando un Job Template diverso in caso di esecuzione corretta o meno.
+Impostare il corretto numero del JOb Template da lanciare all'interno della URL chiamata dalla CURL.
+Impostare le credenziali corrette.
 
 # test-scripts/windows-hosts.ini
 Esempio di inventory con variabili per impostare win_rm. Customizzare per il proprio ambiente.
