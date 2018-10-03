@@ -12,4 +12,4 @@
         jid: "{{ defrag_sleeper.ansible_job_id }}"
       register: job_result
       until: job_result.finished
-      retries: 30
+      retries: 100
