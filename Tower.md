@@ -14,6 +14,6 @@ ansible_user: claudio
 ansible_password: "pfa:12.ppf"
 ansible_host: 192.168.56.3
 
-# Creare un inventory per host linux impostando le vars:
+Creare un inventory per host linux impostando le vars:
 ansible_user: linuxuser
 ansible_password: "passw0rd"
