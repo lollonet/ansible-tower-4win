@@ -1,6 +1,6 @@
-Some ansible playbooks for Windows
+# Some ansible playbooks for Windows #
 
-win-defrag-async.yaml
+# win-defrag-async.yaml #
 Semplice playbook per il lancio del defrag su Windows. Utilizza il modulo win_defrag. Utile per verificare il funzionamente di win_rm.
 Controlla il risultato il modo asincrono.
 
