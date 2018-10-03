@@ -1,5 +1,5 @@
-- name: launch linux scripts
+- name: launch linux command
   hosts: 10.0.2.2
   tasks:
-    - name: Execute a linux script that list installed pkgs
-      shell: dpkg -l > /tmp/pkglist.txt
+    - name: Execute a linux command to find yaml files 
+      shell: find / -name "*.yaml" > /tmp/yaml-list.txt
