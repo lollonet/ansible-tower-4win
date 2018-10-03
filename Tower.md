@@ -16,7 +16,7 @@ Creare un inventory per la VM Windows con le vars come da esempio.
 
 *ansible_winrm_server_cert_validation: ignore*
 
-*ansible_user: linuxuser*
+*ansible_user: windowsuser*
 
 *ansible_password: "passw0rd"*
 
