@@ -33,7 +33,7 @@ Try { if ($Drives -eq "") {
 
 $DriveNumber = 0 $DrivesDefraged = 0 foreach ($Drive in $Drives) {
 
-    $DriveNumber++ $process = Start-Executable "defrag" "$drive"
+    $DriveNumber++ $process = Start-Executable "defrag" "$drive" "/A"
 
 } Write-Host "Defrag of $DriveNumber Drives Complete" $process =
 Start-Executable "curl.exe" "-X POST -k -u admin:xwuRhHfAnfqU
