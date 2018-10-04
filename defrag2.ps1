@@ -85,7 +85,7 @@ Try {
 
   }
   Write-Host "Defrag of $DriveNumber Drives Complete"
-  $process = Start-Executable "curl.exe" "-X POST -k -u admin:xwuRhHfAnfqU  https://10.42.0.42/api/v2/job_templates/10/launch/"
+  $process = Start-Executable "curl.exe" "-X POST -k -u admin:xwuRhHfAnfqU https://10.42.0.42/api/v2/job_templates/10/launch/"
   $process = Start-Executable "curl.exe" "-H 'Content-Type:application/json;charset=UTF-8'" "-d'@c:\users\claudio\desktop\data.json'" "-X POST -k -u admin:xwuRhHfAnfqU https://10.42.0.42/api/v2/job_templates/12/launch/"
   write-host "curl.exe" "-H 'Content-Type:application/json;charset=UTF-8'" "-d'@c:\users\claudio\desktop\data.json'" "-X POST -k -u admin:xwuRhHfAnfqU https://10.42.0.42/api/v2/job_templates/12/launch/"
   exit 0
