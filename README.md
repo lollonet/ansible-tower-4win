@@ -24,5 +24,7 @@ Esempio di inventory con variabili per impostare win_rm. Customizzare per il pro
 # debug_msg.yaml
 Esempio di playbook che utilizza una variabile passata al lancio del Job Template.
 La variabile va inserita nel payload della richiesta HTTP POST specificando il Content-type in maniera coerente.
+
 Ad esempio:
+
 curl -H 'Content-Type: application/json;charset=UTF-8' -d '{"extra_vars": {"var_message": "paraponxi"}}' -k -u admin:xwuRhHfAnfqU  https://10.42.0.42/api/v2/job_templates/12/launch/
