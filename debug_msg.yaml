@@ -3,4 +3,4 @@
   tasks:
     - name: Print Variiable in Message
       debug:
-        msg: {{ var_message }}
+        msg: "{{ var_message }}"
