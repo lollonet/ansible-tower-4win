@@ -31,4 +31,5 @@ curl -H 'Content-Type: application/json;charset=UTF-8' -d '{"extra_vars": {"var_
 
 In alternativa si possono scrivere le variabili in un file JSON da passare all'opzione "-d" tramite "@".
 Ad esempio:
+
 curl -H 'Content-Type: application/json;charset=UTF-8' -d '@c:\path\to\file.json' -k -u admin:xwuRhHfAnfqU  https://10.42.0.42/api/v2/job_templates/12/launch/
