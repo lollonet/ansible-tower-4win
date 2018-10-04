@@ -27,4 +27,4 @@ La variabile va inserita nel payload della richiesta HTTP POST specificando il C
 
 Ad esempio:
 
-curl -H 'Content-Type: application/json;charset=UTF-8' -d '{"extra_vars": {"var_message": "paraponxi"}}' -k -u admin:xwuRhHfAnfqU  https://10.42.0.42/api/v2/job_templates/12/launch/
+curl -H 'Content-Type: application/json;charset=UTF-8' -d '{"extra_vars": {"var_message": "parametro_1"}}' -k -u admin:xwuRhHfAnfqU  https://10.42.0.42/api/v2/job_templates/12/launch/
