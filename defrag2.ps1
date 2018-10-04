@@ -16,7 +16,6 @@ An array of drive letters to be defragged else defrag the lot
 #>
 param(
   [string]$Drives
-
 )
 
 <#
@@ -70,19 +69,14 @@ function Start-Executable {
 
 Try {
   if ($Drives -eq "") {
-
     $Drives = get-wmiobject win32_logicaldisk -filter "drivetype=3" | select-object -expandproperty name
-
   }
 
   $DriveNumber = 0
   $DrivesDefraged = 0
   foreach ($Drive in $Drives) {
-
     $DriveNumber++
     $process = Start-Executable "defrag" "$drive"
-
-
   }
   Write-Host "Defrag of $DriveNumber Drives Complete"
   $process = Start-Executable "curl.exe" "-X POST -k -u admin:xwuRhHfAnfqU https://10.42.0.42/api/v2/job_templates/10/launch/"
@@ -91,15 +85,8 @@ Try {
   exit 0
   } # End Try
 
-
-
-
-
   Catch {
-
     Write-Host "Defrag Failed"
     $process = Start-Executable "curl.exe" "-X POST -k -u admin:xwuRhHfAnfqU  https://10.42.0.42/api/v2/job_templates/10/launch/"
-
     exit 1001
-
     } # End Catch
