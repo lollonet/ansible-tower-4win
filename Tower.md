@@ -27,3 +27,13 @@ Creare un inventory per host linux impostando le vars:
 *ansible_user: linuxuser*
 
 *ansible_password: "passw0rd"*
+
+# Workflow
+
+Creare un Job Template per ogni playbook esistente.
+
+Definire un workflow che lancia il Job template contenente il playbook win-defragscript-async.yaml.
+Definire il lancio di altro Job Template su termine JOB ok (launch-linux-job.yaml) o failed (Demo Job Template)
+
+In questo caso la logica del flusso è definita all'interno del workflow ansible.
+E’ comunque possibile che il processo Windows lanciato da win-defragscript-async.yaml lanci l’esecuzione di un ulteriore Job Template o Workflow tramite API call, passandogli se è necessario, alcuni paramteri.

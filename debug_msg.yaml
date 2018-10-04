@@ -1,0 +1,6 @@
+- name: Debug Msg Sample
+  hosts: all
+  tasks:
+    - name: Print Variiable in Message
+      debug:
+        msg: {{ var_message }}
