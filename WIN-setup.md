@@ -11,7 +11,7 @@ win10vm:
 vars:
 ansible_user: claudio
 ansible_host: 192.168.56.3
-ansible_password: "pfa:12.ppf"
+ansible_password: "passw0rd"
 ansible_connection: winrm
 ansible_winrm_transport: basic
 ansible_winrm_server_cert_validation: ignore
